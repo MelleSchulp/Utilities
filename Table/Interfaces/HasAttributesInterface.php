@@ -2,11 +2,11 @@
 
 declare(use_strict=1);
 
-namespace Table\Traits;
+namespace Table\Interfaces;
 
 use Interfaces\AttributeInterface;
 
-trait HasAttributesTrait
+interface HasAttributesInterface
 {
     /**
      * @return \Traversable<AttributeInterface>
