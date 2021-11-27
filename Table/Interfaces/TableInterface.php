@@ -10,6 +10,7 @@ use Interfaces\TableSectionInterface;
 interface TableInterface extends HasAttributesInterface
 {
     public function getCaption(): string;
+    public function hasCaption(): bool;
 
     /**
      * @return \Traversable<TableSectionInterface>
