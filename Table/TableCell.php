@@ -2,7 +2,7 @@
 
 declare(use_strict=1);
 
-namespace Table\Interfaces;
+namespace Table;
 
 use Table\Enums\TableCellType;
 use Table\Traits\HasAttributesTrait;
