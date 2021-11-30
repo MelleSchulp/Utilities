@@ -4,8 +4,8 @@ declare(use_strict=1);
 
 namespace Table;
 
-use Interfaces\TableInterface;
-use Interfaces\TableSectionInterface;
+use Table\Interfaces\TableInterface;
+use Table\Interfaces\TableSectionInterface;
 
 class Table implements TableInterface
 {

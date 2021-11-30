@@ -4,9 +4,9 @@ declare(use_strict=1);
 
 namespace Table\Interfaces;
 
-use Enums\TableSectionType;
-use Interfaces\HasAttributesInterface;
-use Interfaces\TableRowInterface;
+use Table\Enums\TableSectionType;
+use Table\Interfaces\HasAttributesInterface;
+use Table\Interfaces\TableRowInterface;
 
 interface TableSectionInterface extends HasAttributesInterface
 {

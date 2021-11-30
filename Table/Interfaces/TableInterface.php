@@ -4,8 +4,8 @@ declare(use_strict=1);
 
 namespace Table\Interfaces;
 
-use Interfaces\HasAttributesInterface;
-use Interfaces\TableSectionInterface;
+use Table\Interfaces\HasAttributesInterface;
+use Table\Interfaces\TableSectionInterface;
 
 interface TableInterface extends HasAttributesInterface
 {

@@ -4,7 +4,7 @@ declare(use_strict=1);
 
 namespace Table\Interfaces;
 
-use Interfaces\AttributeInterface;
+use Table\Interfaces\AttributeInterface;
 
 interface HasAttributesInterface
 {

@@ -4,8 +4,8 @@ declare(use_strict=1);
 
 namespace Table\Interfaces;
 
-use Enums\TableColumnType;
-use Interfaces\HasAttributesInterface;
+use Table\Enums\TableColumnType;
+use Table\Interfaces\HasAttributesInterface;
 
 interface TableColumnInterface extends HasAttributesInterface
 {

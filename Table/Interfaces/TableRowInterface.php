@@ -4,7 +4,7 @@ declare(use_strict=1);
 
 namespace Table\Interfaces;
 
-use Interfaces\HasAttributesInterface;
+use Table\Interfaces\HasAttributesInterface;
 
 interface TableRowInterface extends HasAttributesInterface
 {
