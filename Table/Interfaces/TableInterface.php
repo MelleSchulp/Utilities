@@ -9,13 +9,20 @@ use Interfaces\TableSectionInterface;
 
 interface TableInterface extends HasAttributesInterface
 {
-    public function getCaption(): string;
-    public function hasCaption(): bool;
+    public function addSection(TableSectionInterface $section): void;
+    public function getCaption(): ?string;
 
     /**
      * @return \Traversable<TableSectionInterface>
      */
     public function getSections(): \Traversable;
 
+    public function hasCaption(): bool;
+
     public function setCaption(string $caption): void;
+
+    /**
+     * @param \Traversable<TableSectionInterface> $sections
+     */
+    public function setSections(\Traversable $sections): void;
 }
