@@ -8,6 +8,8 @@ use Table\Interfaces\AttributeInterface;
 
 interface HasAttributesInterface
 {
+    public function addAttribute(AttributeInterface $attribute): void;
+
     /**
      * @return \Traversable<AttributeInterface>
      */
