@@ -6,9 +6,12 @@ namespace Table;
 
 use Table\Interfaces\TableInterface;
 use Table\Interfaces\TableSectionInterface;
+use Table\Traits\HasAttributesTrait;
 
 class Table implements TableInterface
 {
+    use HasAttributesTrait;
+
     private ?string $caption = null;
 
     /**
