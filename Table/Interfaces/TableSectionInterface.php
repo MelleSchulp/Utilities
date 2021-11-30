@@ -18,6 +18,7 @@ interface TableSectionInterface extends HasAttributesInterface
     public function getRows(): \Traversable;
     public function getType(): TableSectionType;
     public function hasRows(): bool;
+
     /**
      * @param \Traversable<TableRowInterface> $rows
      */
