@@ -7,8 +7,8 @@
         <{{ $tableSection->getType() }} {{ $tableSection->renderAttributes() }}>
             @foreach ($tableSection->getRows() as $tableRow)
                 <tr {{ $tableRow->renderAttributes() }}>
-                    @foreach ($tableRow->getColumns() as $tableColumn)
-                        <{{ $tableColumn->getType() }} {{ $tableColumn->renderAttributes() }}>{{ $tableColumn->getContent() }}</{{ $tableColumn->getType() }}>
+                    @foreach ($tableRow->getCells() as $tableCell)
+                        <{{ $tableCell->getType() }} {{ $tableCell->renderAttributes() }}>{{ $tableCell->getContent() }}</{{ $tableCell->getType() }}>
                     @endforeach
                 </tr>
             @endforeach

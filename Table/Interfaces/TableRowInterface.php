@@ -9,8 +9,8 @@ use Table\Interfaces\HasAttributesInterface;
 interface TableRowInterface extends HasAttributesInterface
 {
     /**
-     * @return \Traversable<TableColumnInterface>
+     * @return \Traversable<TableCellInterface>
      */
-    public function getColumns(): \Traversable;
-    public function hasColumns(): bool;
+    public function getCells(): \Traversable;
+    public function hasCells(): bool;
 }

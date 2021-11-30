@@ -4,11 +4,11 @@ declare(use_strict=1);
 
 namespace Table\Interfaces;
 
-use Table\Enums\TableColumnType;
+use Table\Enums\TableCellType;
 use Table\Interfaces\HasAttributesInterface;
 
-interface TableColumnInterface extends HasAttributesInterface
+interface TableCellInterface extends HasAttributesInterface
 {
     public function getContent(): string;
-    public function getType(): TableColumnType;
+    public function getType(): TableCellType;
 }
