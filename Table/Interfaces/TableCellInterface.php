@@ -9,6 +9,8 @@ use Table\Interfaces\HasAttributesInterface;
 
 interface TableCellInterface extends HasAttributesInterface
 {
-    public function getContent(): string;
+    public function getContent(): ?string;
     public function getType(): TableCellType;
+    public function setContent(string $content): void;
+    public function setType(TableCellType $type): void;
 }
