@@ -31,7 +31,7 @@ trait HasAttributesTrait
                 function (AttributeInterface &$attribute) {
                     return sprintf('%s="%s"', $attribute->getName(), $attribute->getValue());
                 },
-                (array) $this->getAttributes()
+                iterator_to_array($this->getAttributes())
             )
         );
     }
